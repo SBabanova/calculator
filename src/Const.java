@@ -7,9 +7,14 @@ public class Const extends  Tokens{
         type = TYPE.CONST;
     }
 
-//    @Override
+    @Override
     Integer getValue() {
         return value;
+    }
+
+    @Override
+    String getOperation() {
+        return ".";
     }
 //
 //    @Override

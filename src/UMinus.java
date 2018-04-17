@@ -4,10 +4,14 @@ public class UMinus extends Tokens {
         type = TYPE.UMINUS;
     }
 
-//    @Override
-//    Integer getValue() {
-//        return null;
-//    }
+    @Override
+    Integer getValue() {
+        return 0;
+    }
+    @Override
+    String getOperation(){
+        return "u-";
+    }
 //
 //    @Override
     Integer calc(int a) {

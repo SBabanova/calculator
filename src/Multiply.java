@@ -1,16 +1,16 @@
-public class Division extends Tokens{
+public class Multiply extends Tokens{
 
-    Division(){
+    Multiply(){
         type = TYPE.OPERATION;
     }
-
+//
     @Override
     Integer getValue() {
-        return 0;
+        return null;
     }
     @Override
     String getOperation(){
-        return "/";
+        return "*";
     }
     //
     //    }
@@ -19,7 +19,7 @@ public class Division extends Tokens{
     //    @Override
 //
 
-    Integer calc(int a, int b) throws ArithmeticException {
-        return (int) a / b;
+    Integer calc(int a, int b) {
+        return a * b;
     }
 }

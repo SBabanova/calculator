@@ -12,7 +12,7 @@ public class MyStack {
         if (isFull()){
             return -1;
         }
-        stack[current_size - 1] = value;
+        stack[current_size] = value;
         ++current_size;
         return 0;
     }
@@ -37,5 +37,12 @@ public class MyStack {
 
     int size(){
         return current_size;
+    }
+
+    Object peek(){
+        if (isEmpty()){
+            return null;
+        }
+        return stack[current_size - 1];
     }
 }

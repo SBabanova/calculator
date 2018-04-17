@@ -6,8 +6,10 @@ abstract class Tokens {
     }
     TYPE type;
 //    char c;
-//    Integer value;
-//    abstract Integer getValue();
+    Integer value;
+    abstract Integer getValue();
+    abstract String  getOperation();
+
 //    abstract Integer calc(int a);
 //    abstract Integer calc(int a, int b);
 }

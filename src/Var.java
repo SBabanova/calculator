@@ -15,6 +15,11 @@ public class Var extends Tokens{
     Integer getValue() {
         return value;
     }
+
+    @Override
+    String getOperation() {
+        return ".";
+    }
 //
 //    @Override
 //    Integer calc(int a) {

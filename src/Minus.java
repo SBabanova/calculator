@@ -4,10 +4,14 @@ public class Minus extends Tokens{
         type = TYPE.OPERATION;
     }
 
-//    @Override
-//    Integer getValue() {
-//        return null;
-//    }
+    @Override
+    Integer getValue() {
+        return 0;
+    }
+    @Override
+    String getOperation(){
+        return "-";
+    }
 //
 //    @Override
 //    Integer calc(int a) {
