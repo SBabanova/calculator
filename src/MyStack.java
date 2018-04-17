@@ -1,8 +1,8 @@
 public class MyStack {
-    int max_size;
-    int current_size;
+    private int max_size;
+    private int current_size;
 //    Object value;
-    Object stack[];
+    private Object stack[];
     MyStack(int size){
         this.max_size = size;
         current_size = 0;
@@ -33,6 +33,11 @@ public class MyStack {
 
     boolean isFull(){
         return current_size == max_size;
+    }
+
+    void clear(){
+        current_size = 0;
+        stack = new Object[max_size];
     }
 
     int size(){
